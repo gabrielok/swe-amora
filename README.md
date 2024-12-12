@@ -36,4 +36,4 @@ of python and packages. Here's a step-by-step:
    python -m uvicorn src.server:app --reload 
    ```
 6. Open the docs page: http://127.0.0.1:8000/docs
-7. Test the endpoins using the "Try it out" buttons.
+7. Test the endpoints using the "Try it out" buttons.
