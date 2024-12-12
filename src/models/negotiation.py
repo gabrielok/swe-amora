@@ -9,5 +9,7 @@ from .base import Base
 class Negotiation(Base):
     __tablename__ = "negotiations"
     approved: Mapped[bool]
+    credit_score: Mapped[int]
+    income: Mapped[int]
     property: Mapped["Property"] = relationship(back_populates="negotiation")
     property_id: Mapped[int] = mapped_column(ForeignKey("properties.id"), index=True)
