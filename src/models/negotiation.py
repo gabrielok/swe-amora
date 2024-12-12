@@ -13,3 +13,4 @@ class Negotiation(Base):
     income: Mapped[int]
     property: Mapped["Property"] = relationship(back_populates="negotiation")
     property_id: Mapped[int] = mapped_column(ForeignKey("properties.id"), index=True)
+    reason: Mapped[str | None]
