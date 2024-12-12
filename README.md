@@ -31,3 +31,9 @@ of python and packages. Here's a step-by-step:
    ```bash
    python src/setup.py
    ```
+5. Start the server:
+   ```bash
+   python -m uvicorn src.server:app --reload 
+   ```
+6. Open the docs page: http://127.0.0.1:8000/docs
+7. Test the endpoins using the "Try it out" buttons.
